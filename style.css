@@ -1,0 +1,627 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #8a2be2; /* Lilás */
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #8a2be2; /* Lilás */
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .hero .btn {
+    background-color: #8a2be2; /* Lilás */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .product-page {
+    margin-top: 50px;
+  }
+  
+  .product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .product-detail img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .product-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #8a2be2; /* Lilás */
+  }
+  
+  .price {
+    color: #8a2be2; /* Lilás */
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .description {
+    margin: 20px 0;
+    color: #666;
+    font-size: 1.1rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .product:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .product h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.3rem;
+  }
+  
+  .product p {
+    color: #888;
+  }
+  
+  .category-filter {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .category-btn {
+    background-color: #8a2be2; /* Lilás */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  footer {
+    background-color: #8a2be2; /* Lilás */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .featured-products {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #8a2be2;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .product:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .testimonials {
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .testimonial {
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .testimonial p strong {
+    font-weight: bold;
+  }
+  
+  .cta {
+    background-color: #8a2be2;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .cta .btn {
+    background-color: #fff;
+    color: #8a2be2;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+/* Tipografia */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #8a2be2; /* Lilás */
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #f4f4f4;
+  }
+  
+  /* Hero Image Section */
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .hero .btn {
+    background-color: #fff;
+    color: #8a2be2; /* Lilás */
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #8a2be2;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  /* Produtos em Destaque */
+  .featured-products {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #8a2be2;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s, transform 0.3s ease-in-out;
+  }
+  
+  .product:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .product h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .product p {
+    color: #888;
+  }
+  
+  /* Depoimentos */
+  .testimonials {
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .testimonial {
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .testimonial p strong {
+    font-weight: bold;
+  }
+  
+  /* CTA */
+  .cta {
+    background-color: #8a2be2;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .cta .btn {
+    background-color: #fff;
+    color: #8a2be2;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta .btn:hover {
+    background-color: #8a2be2;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .product h3 {
+      font-size: 1.1rem;
+    }
+  
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .cta h2 {
+      font-size: 1.5rem;
+    }
+  
+    .cta .btn {
+      padding: 10px 20px;
+    }
+  }
+/* Estilo Base para Botões */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #8a2be2; /* Lilás */
+    color: white;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #8a2be2;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Botão Específico de Comprar (Destaque) */
+  .buy-btn {
+    background-color: #ff8c00; /* Laranja para destacar "Comprar" */
+    color: #fff;
+  }
+  
+  .buy-btn:hover {
+    background-color: #fff;
+    color: #ff8c00;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buy-btn:active {
+    transform: scale(1.03);
+    box-shadow: none;
+  }
+  
+  /* Para Botões Responsivos (em dispositivos menores) */
+  @media (max-width: 768px) {
+    .btn {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  }
+/* Melhorando a responsividade dos elementos principais */
+
+/* Cabeçalho */
+header {
+    padding: 20px 15px;  /* Ajuste de padding para telas menores */
+  }
+  
+  header h1 {
+    font-size: 2rem;  /* Tamanho do título ajustado para telas menores */
+  }
+  
+  /* Hero Section */
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Produtos em Destaque */
+  .featured-products h2 {
+    font-size: 1.5rem;  /* Tamanho do título reduzido */
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático para colunas */
+  }
+  
+  /* Ajustes de Botões */
+  .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+  
+  .buy-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsividade em telas menores (tablets) */
+  @media (max-width: 768px) {
+    header {
+      padding: 15px 10px;
+    }
+  
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.8rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Ajuste de colunas */
+    }
+  
+    .featured-products h2 {
+      font-size: 1.3rem;
+    }
+  
+    .btn {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  
+    .buy-btn {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Responsividade para dispositivos móveis (celulares) */
+  @media (max-width: 480px) {
+    header {
+      padding: 10px 5px;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste das colunas */
+    }
+  
+    .featured-products h2 {
+      font-size: 1.2rem;
+    }
+  
+    .btn {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .buy-btn {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  }
+          
