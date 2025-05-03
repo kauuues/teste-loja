@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Loja de Tênis Kevi - Os melhores modelos com ótimos preços" />
+    <title>EK Imports</title>
+
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    
+    <!-- Animações com AOS (opcional, se usar) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>EK Imports</h1>
+      <p>O melhor da moda em tênis</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Início</a></li>
+        <li><a href="{{ url_for('carrinho') }}">Carrinho</a></li>
+        <li><a href="{{ url_for('sobre') }}">Sobre Nós</a></li>
+        <li><a href="{{ url_for('politica') }}">Política</a></li>
+        {% if usuario %}
+          <li>Olá, {{ usuario }} | <a href="{{ url_for('logout') }}">Sair</a></li>
+        {% else %}
+          <li><a href="{{ url_for('login') }}">Entrar</a> | <a href="{{ url_for('register') }}">Cadastrar</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+      {% block content %}
+      <section class="busca-produtos">
+        <h2>Bem-vindo à loja EK Imports</h2>
+        <input type="text" id="busca" placeholder="Buscar tênis..." oninput="filtrarProdutos()" />
+      </section>
+
+      <div class="produtos-container" id="produtos-container">
+        <!-- Produtos vão ser carregados aqui via JS -->
+      </div>
+      {% endblock %}
+    </main>
+
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511977539671" class="whatsapp" target="_blank">Fale conosco</a>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

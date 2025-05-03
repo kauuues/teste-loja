@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuperar Senha</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f0ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #6a1b9a;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #8e24aa;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #6a1b9a;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Recuperar Senha</h2>
+<form method="POST">
+  <input type="email" name="email" placeholder="Digite seu e-mail" required><br>
+  <button type="submit">Verificar</button>
+</form>
+
+    <form method="POST">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="nova_senha">Nova Senha:</label>
+      <input type="password" name="nova_senha" id="nova_senha" required>
+
+      <label for="senha_confirmacao">Confirmar Nova Senha:</label>
+      <input type="password" name="senha_confirmacao" id="senha_confirmacao" required>
+
+      <button type="submit">Alterar Senha</button>
+    </form>
+  </div>
+</body>
+</html>

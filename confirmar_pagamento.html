@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Confirmação de Pagamento</h2>
+  <p>Confira os dados da sua compra:</p>
+
+  <div class="confirmacao-container">
+    <h3>Endereço de Entrega</h3>
+    <p><strong>Endereço:</strong> {{ endereco }}</p>
+    <p><strong>Número:</strong> {{ numero }}</p>
+    <p><strong>Estado:</strong> {{ estado }}</p>
+    <p><strong>CEP:</strong> {{ cep }}</p>
+
+    <h3>Dados do Cartão</h3>
+    <p><strong>Nome no cartão:</strong> {{ nome }}</p>
+    <p><strong>Número:</strong> {{ numero_cartao }}</p>
+    <p><strong>Validade:</strong> {{ validade }}</p>
+    <p><strong>CVV:</strong> {{ cvv }}</p>
+
+    <p><strong>Status:</strong> Pagamento simulado com sucesso ✅</p>
+  </div>
+{% endblock %}
+<div style="text-align: center; margin-top: 30px;">
+  <a href="{{ url_for('index') }}" class="btn">Voltar para a loja</a>
+</div>
